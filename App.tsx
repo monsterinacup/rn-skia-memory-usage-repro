@@ -1,12 +1,11 @@
-import { Canvas, Fit, useImage, Image } from "@shopify/react-native-skia";
+import { Canvas, Fit, Image, useImage } from "@shopify/react-native-skia";
 import React, { useState } from "react";
 import {
   LayoutChangeEvent,
   LayoutRectangle,
-  StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from "react-native";
 
 /**
@@ -138,12 +137,3 @@ function ShowHideContent({ children }: { children?: React.ReactNode }) {
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
